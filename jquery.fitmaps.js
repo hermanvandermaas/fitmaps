@@ -36,7 +36,7 @@
 
 		return this.each(function(){
 			var selectors = [
-				"iframe[src*='maps.google']"
+				"iframe[src*='https://maps.google']"
 			];
 		
 			if (settings.customSelector) {
