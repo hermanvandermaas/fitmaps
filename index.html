@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitMaps test</title>
+    <style type="text/css">
+
+        html, body {
+            font-family: arial, verdana;
+            font-size: 100%;
+            background-color: #FFFFE0;
+        }
+        
+        #thing-with-maps {
+            width: 30%;
+            margin: 1em auto;
+            border: 3px solid #F0E68C;
+            background-color: white;
+            padding: 1em;
+            overflow: hidden;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        #thing-with-maps-no-fitmaps {
+            width: 30%;
+            margin: 1em auto;
+            border: 3px solid #F0E68C;
+            background-color: white;
+            overflow: hidden;
+            padding: 1em;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery.fitmaps.js"></script>
+	<script>
+	
+		$(document).ready(function(){
+			// Target your .container, .wrapper, .post, etc.
+			$("#thing-with-maps").fitMaps( {w: '100%', h:'250px'} );
+		});
+        
+    </script>
+</head>
+<body>
+    <div id="thing-with-maps">
+        <h1>FitMaps jQuery plugin</h1>
+        <h2>Change browser window width and refresh (ctrl-r or F5) to test</h2>
+        <h4>With FitMaps:</h4>
+            <p>
+                <!-- Google maps embed code, copy-pasted -->
+                <iframe width="350" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.nl/maps/ms?msa=0&amp;msid=203503883063435584829.0004c493ae7598681c73f&amp;ie=UTF8&amp;t=h&amp;ll=53.218728,6.567786&amp;spn=0,0&amp;output=embed"></iframe><br /><small><a href="https://maps.google.nl/maps/ms?msa=0&amp;msid=203503883063435584829.0004c493ae7598681c73f&amp;ie=UTF8&amp;t=h&amp;ll=53.218728,6.567786&amp;spn=0,0&amp;source=embed" style="color:#0000FF;text-align:left">Groningen</a> weergeven op een grotere kaart</small>
+            </p>
+    </div>
+    <div id="thing-with-maps-no-fitmaps">
+        <h4>Without FitMaps:</h4>
+        <p>
+            <iframe width="350" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.nl/maps/ms?msa=0&amp;msid=203503883063435584829.0004c4f391d1d4ac8979b&amp;ie=UTF8&amp;t=h&amp;ll=52.373058,4.892612&amp;spn=0,0&amp;output=embed"></iframe><br /><small><a href="https://maps.google.nl/maps/ms?msa=0&amp;msid=203503883063435584829.0004c4f391d1d4ac8979b&amp;ie=UTF8&amp;t=h&amp;ll=52.373058,4.892612&amp;spn=0,0&amp;source=embed" style="color:#0000FF;text-align:left">Amsterdam</a> weergeven op een grotere kaart</small>
+        </p>
+    </div>
+</body>
+</html>
